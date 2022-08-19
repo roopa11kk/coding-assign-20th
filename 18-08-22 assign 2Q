@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int arr[]={20,89,23,78,100,65,79,56,25,64};
+	int len=sizeof(arr)/sizeof(int);
+	int flag,i,n,sum=0,f=1;
+	for(i=0;i<len;i++)
+	{
+		n=arr[i];
+		flag=0;
+		{
+			if(flag==0)
+			{
+				printf("%d\n",n);
+				sum +=n;
+			}
+			printf("sum=%d\n",sum);
+		}
+		f=f*sum;
+		sum =+sum;
+	}
+	printf("\n sum of factorial=%d\n",f);
+}
